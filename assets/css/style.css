@@ -1,0 +1,83 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif ;
+}
+
+/* body styling*/
+body{
+    background: white ;
+}
+
+/*highscore link*/
+.highscore{
+    color: orangered;
+    font-size: 18px;
+}
+
+/* introductory box w/ rules styling*/
+.rule-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 540px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 5px;
+}
+
+.rule-box .rule-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 0.5px solid orangered;
+    display: flex;
+    align-items: center;
+    padding: 0 130px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rule-box .rule-intro p{
+    align-items: center;
+    display: flex;
+    padding: 0 180px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+ .rule-box .rule-list {
+     align-items: center;
+    padding: 15px 35px;
+ }
+
+ .rule-box .rule-list .rule{
+     margin: 5px 0;
+     font-size: 17px;
+ }
+
+ .rule-box .rule-list .rule span{
+     font-weight: 600;
+     color: orangered;
+ }
+.rule-box .button{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 220px;
+}
+
+.rule-box .button button{
+    margin: 0 5px;
+    height: 40px;
+    width: 400px;
+    border: 1px solid orangered;
+    background: orangered;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
