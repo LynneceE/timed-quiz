@@ -16,12 +16,16 @@ body{
 
 
 /* introductory box w/ rules styling*/
-.rule-box, .quiz-box{
-    display: none;
+.rule-box,
+.quiz-box,
+.result-box{
+    
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 550px;
+    background: white;
 }
 
 .rule-box .rule-title{
@@ -80,10 +84,7 @@ body{
 
 /* quiz box styling*/
 
- #q1, #q2, #q3, #q4, #q5{
-    width: 550px;
-    background: white;
-}
+
 
 .quiz-box header{
     height: 70px;
@@ -141,20 +142,16 @@ body{
 
 #buttons li a:hover{
     text-decoration: none;
-    color: black;
+    color: white;
     background-color: orangered;
 }
 
+
+
+
 /*result box styling*/
 
-.results{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-}
-
-.results .result-text{
+.result-box .result-title{
     height: 60px;
     width: 100%;
     border-bottom: 0.5px solid orangered;
@@ -164,3 +161,35 @@ body{
     font-size: 20px;
     font-weight: 600;
 }
+
+.result-box .result{
+    align-items: center;
+    padding: 0 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.result-box .result span{
+    font-weight: 600;
+     color: orangered;
+}
+
+.result-box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+}
+ .result-box .buttons button{
+     margin: 0 5px;
+     height: 40px;
+     width: 110%;
+     border: 1px solid orangered;
+     background: orangered;
+     border-radius: 5px;
+     color: white;
+     font: 16px;
+ }
+
