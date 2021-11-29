@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+<body>
+
+    
+
+
+<!--welcome/rule box-->
+<div class="rule-box">
+    <div class="rule-title">
+        <span>WELCOME TO THE JAVASCRIPT QUIZ!</span>
+    </div>
+    <div class="rule-intro">
+        <p>Here are some rules:</p>
+    </div>
+    <div class="rule-list">
+        <div class="rule">1. You'll have <span> 1 minute </span> to complete the quiz</div>
+        <div class="rule">2. Any wrong answer will deduct 10 seconds off the clock</div>
+        <div class="rule">3. You can't change your answer once selected</div>
+        <div class="rule">4. You can't exit the quiz once started</div>
+    </div>
+    <div class="button">
+        <button class="start">Let's Begin</button>
+    </div>
+</div>
+
+<!--quiz boxes-->
+    <div class="quiz-box" id="q1">
+       <header>
+           <div class="title" >Question #1 </div>
+           <div class="timer">
+               <div class="timer-text">Time Left:</div>
+               <div class="timer-sec">1:00</div>
+           </div>
+       </header>
+       <section>
+           <div class="q-text">
+               <span>Inside which HTML element do we put the JavaScript?</span>
+               <div class="options">
+                  <ul class="options-list" id="buttons">
+                      <li class="options-item"> &lt;scripting&gt;</li>
+                      <li class="options-item">&lt;javascript&gt;</li>
+                      <li class="options-item"> &lt;script&gt;</li>
+                      <li class="options-item"> &lt;js&gt;</li>
+                  </ul>
+               </div>
+           </div>
+        </section>
+
+        <div class="quiz-box" id="q2">
+            <header>
+                <div class="title">Question #2 </div>
+                <div class="timer">
+                    <div class="timer-text">Time Left:</div>
+                    <div class="timer-sec">1:00</div>
+                </div>
+            </header>
+            <section>
+                <div class="q-text">
+                    <span>How do you get the DOM element with id in JavaScript</span>
+                    <div class="options">
+                       <ul class="options-list" id="buttons">
+                           <li class="options-item">window.getElementById(...)</li>
+                           <li class="options-item">document.getElementById(...)</li>
+                           <li class="options-item">page.getElementById(...)</li>
+                           <li class="options-item">document.innerHTML.getElementById(...)</li>
+                       </ul>
+                    </div>
+                </div>
+             </section>
+
+                     <div class="quiz-box" id="q3">
+                        <header>
+                            <div class="title">Question #3 </div>
+                            <div class="timer">
+                                <div class="timer-text">Time Left:</div>
+                                <div class="timer-sec">1:00</div>
+                            </div>
+                        </header>
+                        <section>
+                            <div class="q-text">
+                                <span>Which is the correct syntax for displaying data in the console?</span>
+                                <div class="options">
+                                   <ul class="options-list" id="buttons">
+                                       <li class="options-item">console.log();</li>
+                                       <li class="options-item">log.console();</li>
+                                       <li class="options-item">console.log[];</li>
+                                       <li class="options-item">console.log;</li>
+                                   </ul>
+                                </div>
+                            </div>
+                         </section> 
+                        </div> 
+                    </div>  
+                    
+    <!--result box-->
+    <div class="result-box">
+        <div class="result-title">
+            <span>DONE!</span>
+        </div>
+        <div class="result">You scored: <span>time left</span></div>
+        <div class="buttons">
+            <button class="restart">Try Again</button>
+            <button class="quit">Quit</button>
+            <button class="highscore"><a href="highscores.html">View Highscores</a></button>
+        </div>
+
+        <script src="/assets/js/script.js"></script>
+        
+</body>
+</html>

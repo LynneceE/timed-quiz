@@ -1,0 +1,195 @@
+/*google font*/
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif ;
+}
+
+/* body styling*/
+body{
+    background: white ;
+}
+
+/*highscore link*/
+
+
+/* introductory box w/ rules styling*/
+.rule-box,
+.quiz-box,
+.result-box{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    background: white;
+}
+
+.rule-box .rule-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 0.5px solid orangered;
+    display: flex;
+    align-items: center;
+    padding: 0 130px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.rule-box .rule-intro p{
+    align-items: center;
+    display: flex;
+    padding: 0 180px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+ .rule-box .rule-list {
+     align-items: center;
+    padding: 15px 35px;
+ }
+
+ .rule-box .rule-list .rule{
+     margin: 5px 0;
+     font-size: 17px;
+ }
+
+ .rule-box .rule-list .rule span{
+     font-weight: 600;
+     color: orangered;
+ }
+.rule-box .button{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 220px;
+}
+
+.rule-box .button button{
+    margin: 0 5px;
+    height: 40px;
+    width: 400px;
+    border: 1px solid orangered;
+    background: orangered;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/* quiz box styling*/
+
+
+
+.quiz-box header{
+    height: 70px;
+    padding: 0 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.quiz-box header .title{
+     font-size: 20px;
+     font-weight: 600;
+}
+
+.quiz-box header .timer{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    font-weight: 600;
+}
+
+.quiz-box section{
+    padding: 25px 30px 20px 30px;
+}
+
+.quiz-box .q-text .span{
+    align-items: center;
+    margin: 5px 0;
+}
+
+.quiz-box .q-text .options .options-item{
+    list-style-type: none;
+}
+
+
+/* answer option styling*/
+
+#buttons li{
+    width: 135px;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    background: transparent;
+    cursor: pointer;
+    
+}
+
+#buttons li a{
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+#buttons li a:hover{
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+}
+
+
+
+
+/*result box styling*/
+
+.result-box .result-title{
+    height: 60px;
+    width: 100%;
+    border-bottom: 0.5px solid orangered;
+    display: flex;
+    align-items: center;
+    padding: 0 130px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.result-box .result{
+    align-items: center;
+    padding: 0 25px;
+    padding-bottom: 25px;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.result-box .result span{
+    font-weight: 600;
+     color: orangered;
+}
+
+.result-box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 35px;
+}
+ .result-box .buttons button{
+     margin: 0 5px;
+     height: 40px;
+     width: 110%;
+     border: 1px solid orangered;
+     background: orangered;
+     border-radius: 5px;
+     color: white;
+     font: 16px;
+ }
+
