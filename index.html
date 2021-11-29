@@ -10,9 +10,10 @@
 </head>
 <body>
     <!--link to highscore page-->
-    <a class="highscore" href="">View Highscores</a>
+    
 
-<!--welcom/rule box-->
+
+<!--welcome/rule box-->
 <div class="rule-box">
     <div class="rule-title">
         <span>WELCOME TO THE JAVASCRIPT QUIZ!</span>
@@ -29,13 +30,126 @@
     <div class="button">
         <button class="start">Let's Begin</button>
     </div>
-
 </div>
 
-    
+<!--quiz boxes-->
+    <div class="quiz-box" id="q1">
+       <header>
+           <div class="title" >Question #1 </div>
+           <div class="timer">
+               <div class="timer-text">Time Left:</div>
+               <div class="timer-sec">1:00</div>
+           </div>
+       </header>
+       <section>
+           <div class="q-text">
+               <span>Inside which HTML element do we put the JavaScript?</span>
+               <div class="options">
+                  <ul class="options-list" id="buttons">
+                      <li class="options-item"><a href="#"> &lt;scripting&gt</a></li>
+                      <li class="options-item"><a href="#"> &lt;javascript&gt</a></li>
+                      <li class="options-item"><a href="#"> &lt;script&gt</a></li>
+                      <li class="options-item"><a href="#"> &lt;js&gt</a></li>
+                  </ul>
+               </div>
+           </div>
+        </section>
 
-    
-    
-    
+        <div class="quiz-box" id="q2">
+            <header>
+                <div class="title">Question #2 </div>
+                <div class="timer">
+                    <div class="timer-text">Time Left:</div>
+                    <div class="timer-sec">1:00</div>
+                </div>
+            </header>
+            <section>
+                <div class="q-text">
+                    <span>How do you get the DOM element with id in JavaScript</span>
+                    <div class="options">
+                       <ul class="options-list" id="buttons">
+                           <li class="options-item"><a href="#">window.getElementById(...)</a></li>
+                           <li class="options-item"><a href="#"> document.getElementById </a></li>
+                           <li class="options-item"><a href="#"> page.getElementById(...)  </a></li>
+                           <li class="options-item"><a href="#"> document.innerHTML.getElementById(...) </a></li>
+                       </ul>
+                    </div>
+                </div>
+             </section>
+
+             <div class="quiz-box" id="q3">
+                <header>
+                    <div class="title">Question #3 </div>
+                    <div class="timer">
+                        <div class="timer-text">Time Left:</div>
+                        <div class="timer-sec">1:00</div>
+                    </div>
+                </header>
+                <section>
+                    <div class="q-text">
+                        <span>Using _______ statement is how you test for a specific condition.</span>
+                        <div class="options">
+                           <ul class="options-list" id="buttons">
+                               <li class="options-item"><a href="#">Select</a></li>
+                               <li class="options-item"><a href="#">If</a></li>
+                               <li class="options-item"><a href="#">Switch</a></li>
+                               <li class="options-item"><a href="#">For</a></li>
+                           </ul>
+                        </div>
+                    </div>
+                 </section>
+
+                 <div class="quiz-box" id="q4">
+                    <header>
+                        <div class="title">Question #4 </div>
+                        <div class="timer">
+                            <div class="timer-text">Time Left:</div>
+                            <div class="timer-sec">1:00</div>
+                        </div>
+                    </header>
+                    <section>
+                        <div class="q-text">
+                            <span>In Javascript, Window.prompt() method returns a true or false value.</span>
+                            <div class="options">
+                               <ul class="options-list" id="buttons">
+                                   <li class="options-item"><a href="#">False</a></li>
+                                   <li class="options-item"><a href="#">True </a></li>
+                               </ul>
+                            </div>
+                        </div>
+                     </section>
+
+                     <div class="quiz-box" id="q5">
+                        <header>
+                            <div class="title">Question #5 </div>
+                            <div class="timer">
+                                <div class="timer-text">Time Left:</div>
+                                <div class="timer-sec">1:00</div>
+                            </div>
+                        </header>
+                        <section>
+                            <div class="q-text">
+                                <span>Which is the correct syntax for displaying data in the console?</span>
+                                <div class="options">
+                                   <ul class="options-list" id="buttons">
+                                       <li class="options-item"><a href="#">console.log();</a></li>
+                                       <li class="options-item"><a href="#">log.console();</a></li>
+                                       <li class="options-item"><a href="#">console.log[];</a></li>
+                                       <li class="options-item"><a href="#">console.log;</a></li>
+                                   </ul>
+                                </div>
+                            </div>
+                         </section>
+    </div>
+
+    <!--completed test screen-->
+    <div class="results">
+        <div class="result-text">Congratulations! You've completed the quiz!</div>
+        <div class="score-text">click below to checkout your score.</div>
+        <div class="btns">
+            <button class="highscore">View Highscores</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
 </body>
 </html>

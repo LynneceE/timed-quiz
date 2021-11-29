@@ -13,20 +13,15 @@ body{
 }
 
 /*highscore link*/
-.highscore{
-    color: orangered;
-    font-size: 18px;
-}
+
 
 /* introductory box w/ rules styling*/
-.rule-box{
+.rule-box, .quiz-box{
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 540px;
     transform: translate(-50%, -50%);
-    background: white;
-    border-radius: 5px;
 }
 
 .rule-box .rule-title{
@@ -80,4 +75,92 @@ body{
     color: white;
     font-size: 20px;
     cursor: pointer;
+}
+
+
+/* quiz box styling*/
+
+ #q1, #q2, #q3, #q4, #q5{
+    width: 550px;
+    background: white;
+}
+
+.quiz-box header{
+    height: 70px;
+    padding: 0 30px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.quiz-box header .title{
+     font-size: 20px;
+     font-weight: 600;
+}
+
+.quiz-box header .timer{
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    font-weight: 600;
+}
+
+.quiz-box section{
+    padding: 25px 30px 20px 30px;
+}
+
+.quiz-box .q-text .span{
+    align-items: center;
+    margin: 5px 0;
+}
+
+.quiz-box .q-text .options .options-item{
+    list-style-type: none;
+}
+
+
+/* answer option styling*/
+
+#buttons li{
+    width: 135px;
+    margin-bottom: 15px;
+    padding: 15px 0;
+    background: transparent;
+    cursor: pointer;
+    
+}
+
+#buttons li a{
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+#buttons li a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: orangered;
+}
+
+/*result box styling*/
+
+.results{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.results .result-text{
+    height: 60px;
+    width: 100%;
+    border-bottom: 0.5px solid orangered;
+    display: flex;
+    align-items: center;
+    padding: 0 130px;
+    font-size: 20px;
+    font-weight: 600;
 }
